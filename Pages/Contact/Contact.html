@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet">
+<link href="main.css" rel="stylesheet" type="text/css"/>
+<link href="../../hamburgers-master/dist/hamburgers.css" rel="stylesheet">
+<title>Contact</title>
+</head>
+
+<body>
+<!-- Nav Bar -->
+    <div class="navbar">
+        
+        <a class="menu-item-link" href="../Index/index.html">Buddy Agyin</a>
+    
+        <div class="navbar-buttons">
+            
+            <button id="open-menu" class="hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button> 
+            
+        </div>
+        
+        <!-- Overlay Menu -->
+        
+        <div id="overlay" class="overlay">
+        
+            <h2 class="nav-title">Navigation</h2>
+            <nav class="overlay-menu">
+            
+                <ul>
+                    <li><a class="strikethrough" href="../Index/index.html">Home</a></li>
+                    <li><a class="strikethrough" href="../Projects/Projects.html">Projects</a></li>
+                    <li><a class="strikethrough" href="../About-Me/about-me.html">About</a></li>
+                    <li><a class="strikethrough" href="Contact.html">Contact</a></li>
+                    <li>
+                        <button id="close-menu" class="hamburger hamburger--collapse is-active close-menu" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                        </button>
+                    </li>
+                </ul> 
+
+            </nav>
+        
+        </div>
+        
+    </div>     
+<!-- End Nav Div -->
+
+<main>
+    <form id="contact-form">
+        <div>
+            <label>
+                <span>Your Name: (required)</span> <br/>
+                <input type="text" placeholder="Please enter your name" tabindex="1" name="name" required autofocus>
+            </label>
+        </div>
+        
+        <div>
+            <label>
+                <span>Your Email: (required)</span> <br/>
+                <input type="email" placeholder="you@example.com" tabindex="2" name="email" required>
+            </label>
+        </div>
+        
+        <div>
+            <label>
+                <span>Website:</span> <br/>
+                <input type="url" placeholder="www.example.com" tabindex="3" name="website" required>
+            </label>
+        </div>
+        
+        <div>
+            <label>
+                <span>Subject: (required)</span> <br/>
+                <input type="text" tabindex="4" name="subject" required>
+            </label>
+        </div>
+        
+        <div>
+            <label>
+                <span>Message: (required)</span> <br/>
+                <textarea rows="8" tabindex="5" name="message"></textarea>
+            </label>
+        </div>
+        
+        <div>
+            <button name="submit" tabindex="6" type="submit" id="contact-submit">Send</button>
+        </div>
+    </form>
+</main>    
+    
+<!-- End Main Div -->
+<footer id="footer">
+    <div class="footer-text">
+   	    <p class="copyright"> &copy; 2019 Buddy Agyin</p>
+    </div>
+    <div class="social-menu-container">
+        <ul class="social-menu">
+            <li><a href="https://www.facebook.com/agyin3"><img class="icon" src="../../Img/fb-logos/fb-logos-online/white/PNG/f_logo_RGB-White_58.png"/></a></li>
+            <li><a href="https://github.com/agyin3/"><img class="icon" src="../../Img/GitHub-Mark/PNG/GitHub-Mark-Light-64px.png"></a></li>
+            <li><a href="https://instagram.com/justsomebuddy_"><img id="ig" class="icon" src="../../Img/Instagram-Logos/glyph-logo_May2016.png"/></a></li>
+            <li><a href="https://codepen.io/justsomebuddy/"><img class="icon" src="../../Img/code-pen-io-logo-white.png"></a></li>
+            <li><a href="https://twitter.com/developer_buddy"><img class="icon" src="../../Img/Twitter Logos/Twitter Logos/Twitter_Logo_WhiteOnBlue/Twitter_Logo_WhiteOnBlue.png"/></a></li>
+        </ul>
+    </div>  
+</footer>
+<!-- End Footer Div -->
+</body>
+</html>
+<script src="../../Javascript/script.js"></script>

@@ -1,0 +1,241 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+    box-sizing: border-box;
+}
+html, body {
+	padding:0;
+	margin:0;
+    height: 100%;
+    width: 100%;
+    background: url(https://github.com/agyin3/images/blob/master/portfolio/IMG_0085.jpg?raw=true) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Navigation */
+
+.navbar {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    position: fixed;
+}
+
+.navbar-buttons {
+    position: relative;
+    width: 155px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.overlay {
+    font-family: 'Raleway', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #EFD0CA;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+}
+
+.overlay.open {
+    opacity: 1;
+    height: 100%;
+    visibility: visible;
+}
+
+.overlay .nav-title {
+    font-size: 22px;
+    color: #413C58;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    top: 8%;
+    text-align: center;
+}
+
+.menu-item-link {
+    font-family: 'Lobster', cursive;
+    font-size: 26px;
+    font-weight: bold;
+    color: #E6EFE9;
+    text-decoration: none;
+    text-shadow: 0 0 20px #413C58;
+}
+
+.overlay nav {
+    position: relative;
+    height: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 400;
+    font-size: 50px;
+    letter-spacing: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.overlay ul {
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    display: inline-block;
+    height: 100%;
+}
+
+.overlay ul li {
+    position: relative;
+    display: block;
+    margin-bottom: 50px;
+    opacity: 0;
+}
+
+.overlay ul li a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: #413C58;
+    overflow: hidden;
+}
+
+
+.overlay ul li .strikethrough:hover,
+.overlay ul li .strikethrough:focus,
+.overlay ul li .strikethrough:active {
+    color: #E6EFE9;
+	text-shadow: 0 0 20px #413C58;
+}
+
+.overlay.open li {
+    animation: fadeInRight .5s ease forwards;
+    animation-delay: .35s;
+}
+
+.overlay.open li:nth-of-type(2) {
+    animation-delay: .4s;
+}
+.overlay.open li:nth-of-type(3) {
+    animation-delay: .45s;
+}
+.overlay.open li:nth-of-type(4) {
+    animation-delay: .5s;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        left: 20%;
+    }
+    
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+.open-menu,
+.close-menu,
+.button {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#open-menu:hover,
+#close-menu:hover,
+.menu-item-link:hover {
+    transform: scale(1.1);
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    color: #fff;
+}
+
+@media (max-width: 670px) {
+  .overlay nav {
+    font-size: 30px;
+  }
+}
+@media (max-width: 550px) {
+  .overlay nav {
+    font-size: 20px;
+  }
+}
+
+
+/* Main Container */
+main {
+	height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+#heading {
+    align-self: center;
+}
+
+#heading-text {
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-size: 36px;
+    text-shadow: 0 0 40px #000;
+}
+
+/* Footer Styling */
+footer {
+    position: relative;
+    background: #1FA1F2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-menu-container {
+    width: 20%;
+}
+
+.copyright{
+	font-family: 'Raleway', sans-serif;
+    padding-left: 50px;
+    color: #fff;
+}
+
+.social-menu {
+	list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 30px;
+}
+
+.icon {
+    height: 24px;
+    width: 24px;
+    color: #fff;
+}
+
+#ig {
+    filter: invert(100%) sepia(1%) saturate(0%) hue-rotate(149deg) brightness(105%) contrast(100%);
+}
+
+.icon:hover{
+	opacity:0.5;
+}
