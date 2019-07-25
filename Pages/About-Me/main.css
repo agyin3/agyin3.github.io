@@ -376,7 +376,7 @@ footer {
     }
 
     .current-info-container {
-        width: 75%;
+        width: 95%;
         margin-bottom: 5%;
         font-size: 1.1rem;
     }
@@ -397,6 +397,7 @@ footer {
 
     .skills-text {
         font-size: 1.1rem;
+        width: 90%;
     }
 
     footer {
