@@ -241,6 +241,11 @@ footer {
 /* Media Queries */
 
 @media screen and (max-width:500px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 0;
+    }
+    
     .navbar-buttons {
         justify-content: flex-end;
     }
