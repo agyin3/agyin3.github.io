@@ -63,7 +63,7 @@ html, body {
     font-weight: bold;
     position: absolute;
     transform: translate(-50%);
-    left: 50%;
+    left: 48%;
     top: 8%;
     text-align: center;
 }
@@ -245,6 +245,10 @@ footer {
         justify-content: space-between;
         padding: 0;
     }
+
+    .overlay nav {
+        letter-spacing: 20px;
+    }
     
     .navbar-buttons {
         justify-content: flex-end;
@@ -266,3 +270,5 @@ footer {
         padding-right: 0;
     }
 }
+
+
