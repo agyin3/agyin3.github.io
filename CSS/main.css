@@ -227,8 +227,6 @@ footer {
 }
 
 .icon {
-    height: 24px;
-    width: 24px;
     color: #fff;
 }
 
@@ -238,4 +236,28 @@ footer {
 
 .icon:hover{
 	opacity:0.5;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:500px) {
+    .navbar-buttons {
+        justify-content: flex-end;
+    }
+
+    footer {
+        justify-content: space-around;
+    }
+
+    .copyright {
+        padding-left: 0;
+    }
+
+    .social-menu-container {
+        width: 40%;
+    }
+
+    .social-menu {
+        padding-right: 0;
+    }
 }
