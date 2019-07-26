@@ -17,7 +17,7 @@ body {
 /* Navigation */
 
 .navbar {
-    height: 5.625rem;
+    height: 5vw;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -266,7 +266,6 @@ footer {
 @media screen and (max-width:500px) {
     .navbar {
         padding: 1rem;
-        height: 4.5rem;
     }
 
     .overlay nav {
@@ -312,7 +311,6 @@ footer {
 @media screen and (max-width: 800px) {
     .navbar {
         padding: 2rem;
-        height: 5rem;
     }
 
     .overlay nav {
@@ -321,5 +319,11 @@ footer {
 
     #contact-form {
         margin-top: 15%;
+    }
+}
+
+@media screen and (max-width: 1122px) {
+    .navbar {
+        padding: 2.2rem;
     }
 }

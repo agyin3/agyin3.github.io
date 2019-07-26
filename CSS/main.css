@@ -17,13 +17,13 @@ html, body {
 }
 
 body {
-    font-size: 16px;
+    font-size: 100%;
 }
 
 /* Navigation */
 
 .navbar {
-    height: 90px;
+    height: 5vw;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -278,6 +278,12 @@ footer {
 
     .overlay nav {
         letter-spacing: 1.875rem;
+    }
+}
+
+@media screen and (max-width: 1122px) {
+    .navbar {
+        padding: 2.2rem;
     }
 }
 
