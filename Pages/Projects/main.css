@@ -311,6 +311,10 @@ footer {
     .social-menu {
         padding-right: 0;
     }
+
+    .projects-info {
+        font-size: 0.9rem;
+    }
 }
 
 
