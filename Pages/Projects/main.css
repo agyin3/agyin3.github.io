@@ -313,6 +313,7 @@ footer {
 
     .projects-info {
         font-size: 0.9rem;
+        padding-bottom: 5%;
     }
 }
 
@@ -328,5 +329,8 @@ footer {
 
     .projects-wrapper {
         width: 90vw;
+    }
+    .projects-info {
+        padding-bottom: 5%;
     }
 }
